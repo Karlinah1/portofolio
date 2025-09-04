@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Photographer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black">
+        <div class="container">
+            <h1>Aletta Vanesya Photography</h1>
+            <div class="space-x-6">
+                <a href="#hero" class="hover:text-yellow-400">Home</a>
+                <a href="#about" class="hover:text-yellow-400">About</a>
+                <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+                <a href="#testimonial" class="hover:text-yellow-400">Testimonial</a>
+                <a href="#contact" class="hover:text-yellow-400">Contact</a>
+            </div>
+            <button id="menu-toggle">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <a href="#hero" class="hover:text-yellow-400">Home</a>
+            <a href="#about" class="hover:text-yellow-400">About</a>
+            <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+            <a href="#testimonial" class="hover:text-yellow-400">Testimonial</a>
+            <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg">
+        <div class="absolute"></div>
+        <div class="z-10">
+            <img src="image/profil.jpeg" alt="Profil" class="rounded-full" />
+            <h1>Aletta Vanesya Photography</h1>
+            <p>Capturing life's beautiful moments with unparalleled artistry and precision.</p>
+            <a href="#gallery" class="bg-yellow-400">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="md:w-1/2">
+                <img src="image/about.jpeg" alt="Profil" class="rounded-full" />
+            </div>
+            <div class="md:w-1/2 md:pl-12 mt-10 md:mt-0">
+                <h2>About Me</h2>
+                <p>Halo, saya seorang fotografer profesional yang percaya bahwa foto bukan sekadar gambar, tapi cerita yang hidup selamanya.
+                   Setiap jepretan bagi saya adalah upaya untuk menangkap emosi, detail, dan momen berharga yang sering terlewat oleh mata 
+                   biasa.
+                </p>
+                <p>Saya memiliki gaya fotografi yang konsisten dengan sentuhan khas memadukan pencahayaan alami, komposisi yang rapi, dan 
+                    warna yang hangat. Dari potret pribadi, pernikahan, hingga kebutuhan komersial, saya selalu menghadirkan hasil karya 
+                    yang bukan hanya indah, tetapi juga bermakna.
+                    Bagi saya, setiap klien memiliki cerita unik. Karena itu, sebelum sesi foto dimulai, saya selalu membuka ruang diskusi 
+                    agar konsep, gaya, dan suasana yang diinginkan bisa terwujud dengan maksimal. Selama pemotretan, saya tidak hanya 
+                    memotret, tetapi juga membimbing agar setiap orang merasa nyaman dan percaya diri di depan kamera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Portfolio Gallery</h2>
+            <div class="grid">
+                <div class="gallery-item" data-src="image/image1.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image1.jpeg" alt="foto wedding 1" />
+                </div>
+                <div class="gallery-item" data-src="image/image2.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image2.jpeg" alt="foto wedding 2" />
+                </div>
+                <div class="gallery-item" data-src="image/image3.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image3.jpeg" alt="foto wedding 3" />
+                </div>
+                <div class="gallery-item" data-src="image/image4.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image4.jpeg" alt="foto wedding 4" />
+                </div>
+                <div class="gallery-item" data-src="image/image5.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image5.jpeg" alt="foto wedding 5" />
+                </div>
+                <div class="gallery-item" data-src="image/image6.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image6.jpeg" alt="foto wedding 6" />
+                </div>
+                <div class="gallery-item" data-src="image/image7.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image7.jpeg" alt="foto wedding 7" />
+                </div>
+                <div class="gallery-item" data-src="image/image8.jpeg" onclick="openLightbox(this)">
+                    <img src="image/image8.jpeg" alt="foto wedding 8" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial">
+        <div class="container">
+            <h2>Testimoni</h2>
+            <div class="testimonial-carousel">
+                <!-- Testimonial Slides -->
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide" tabindex="0">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                            </div>
+                            <p class="testimonial-text">"Aletta captured our wedding day perfectly! Every photo tells a story and brings back beautiful memories. Her attention to detail is remarkable."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="image/image1.jpeg" alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Wedding Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide" tabindex="0">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">"Working with Aletta for our corporate event was a pleasure. She was professional, unobtrusive, and delivered stunning photos that perfectly captured our brand."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="image/image2.jpeg" alt="Michael Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>Corporate Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide" tabindex="0">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                            </div>
+                            <p class="testimonial-text">"The family portraits Aletta took exceeded our expectations. She was patient with our children and captured genuine moments that we'll treasure forever."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="image/image3.jpeg" alt="Emily Rodriguez">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <p>Family Portrait Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Controls -->
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">❮</button>
+                    <div class="testimonial-indicators">
+                        <button class="indicator active" aria-label="Go to slide 1" data-slide="0"></button>
+                        <button class="indicator" aria-label="Go to slide 2" data-slide="1"></button>
+                        <button class="indicator" aria-label="Go to slide 3" data-slide="2"></button>
+                    </div>
+                    <button class="testimonial-next" aria-label="Next testimonial">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Ready to capture your story? Let's collaborate!</p>
+            <p>Email: alettavanesya@photography.com</p>
+            <p>Phone: +62 82115857995</p>
+            <div class="flex">
+                <a href="#" class="text-yellow-400 hover:text-white">Facebook</a>
+                <a href="#" class="text-yellow-400 hover:text-white">Instagram</a>
+                <a href="#" class="text-yellow-400 hover:text-white">Twitter</a>
+            </div>
+            <p class="text-sm">© 2025 Aletta Vanesya Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
